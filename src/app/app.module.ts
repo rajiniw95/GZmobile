@@ -1,16 +1,41 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { MyProfilePage } from '../pages/my-profile/my-profile';
+import { MyPaymentsPage } from '../pages/my-payments/my-payments';
+import { MyDeliveriesPage } from '../pages/my-deliveries/my-deliveries';
+import { LoginPage } from '../pages/login/login';
+import { MyOrdersPage } from '../pages/my-orders/my-orders';
+import { HomePagePage } from '../pages/home-page/home-page';
+import { PreviousPurchasesPage } from '../pages/previous-purchases/previous-purchases';
+import { PendingOrdersPage } from '../pages/pending-orders/pending-orders';
+import { RecordDepositPage } from '../pages/record-deposit/record-deposit';
+import { OrderPage } from '../pages/order/order';
+import { DeliveryPage } from '../pages/delivery/delivery';
+import { CalculatePaymentPage } from '../pages/calculate-payment/calculate-payment';
+import { UploadDepositSlipPage } from '../pages/upload-deposit-slip/upload-deposit-slip';
+
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    MyProfilePage,
+    MyPaymentsPage,
+    MyDeliveriesPage,
+    LoginPage,
+    MyOrdersPage,
+    HomePagePage,
+    PreviousPurchasesPage,
+    PendingOrdersPage,
+    RecordDepositPage,
+    OrderPage,
+    DeliveryPage,
+    CalculatePaymentPage,
+    UploadDepositSlipPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +44,19 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    MyProfilePage,
+    MyPaymentsPage,
+    MyDeliveriesPage,
+    LoginPage,
+    MyOrdersPage,
+    HomePagePage,
+    PreviousPurchasesPage,
+    PendingOrdersPage,
+    RecordDepositPage,
+    OrderPage,
+    DeliveryPage,
+    CalculatePaymentPage,
+    UploadDepositSlipPage
   ],
   providers: [
     StatusBar,

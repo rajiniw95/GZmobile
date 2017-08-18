@@ -1,1 +1,33 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <div>
+      <img src="assets/img/9QAPDmx5QDGYgfQA1v9Q_12314128_1674935919443516_3250136307729642455_n.png" style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+    </div>
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" on-click="goToMyOrders()" id="menu-list-item1">
+        My Orders
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMyDeliveries()" id="menu-list-item2">
+        My Deliveries
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMyPayments()" id="menu-list-item3">
+        My Payments
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToMyProfile()" id="menu-list-item5">
+        View Profile
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToLogin()" id="menu-list-item4">
+        Sign out
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
